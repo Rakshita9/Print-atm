@@ -61,16 +61,34 @@ A Django-based prototype for a self-service printing system that allows users to
 
 
 \## Setup
-
-
-
-\### 1. Clone the repository
-
-
+### 1. Clone the repository
 
 ```bash
-
 git clone <repository-url>
-
 cd Print-atm
+
+step 2:-
+Create a virtual environment
+python -m venv venv
+
+step 3:-
+Activate the virtual environment
+
+Windows PowerShell:
+venv\Scripts\Activate.ps1
+
+step 4:-
+
+Install dependencies
+
+pip install -r requirements.txt
+
+
+step 5:-
+Run migrations
+python manage.py migrate
+
+step 6:-
+Start the development server
+python manage.py runserver
 
